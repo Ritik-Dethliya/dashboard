@@ -1,0 +1,127 @@
+[
+  {
+    "name": "Amit Sharma",
+    "email": "amit.sharma1@example.com",
+    "role": "Developer",
+    "assessment_submitted": true,
+    "assessment_answers": [
+      { "question": "q1", "answer": "I enjoy solving problems" },
+      { "question": "q2", "answer": "I like learning new technologies" }
+    ],
+    "tags": ["JavaScript", "React"],
+    "submission_date": "2024-07-15T10:12:00Z",
+    "score": 85,
+    "status": true
+  },
+  {
+    "name": "Priya Verma",
+    "email": "priya.verma@example.com",
+    "role": "Designer",
+    "assessment_submitted": false,
+    "assessment_answers": [],
+    "tags": ["Figma", "Creativity"],
+    "submission_date": null,
+    "score": 0,
+    "status": true
+  },
+  {
+    "name": "Rohit Kumar",
+    "email": "rohit.kumar@example.com",
+    "role": "QA",
+    "assessment_submitted": true,
+    "assessment_answers": [
+      { "question": "q1", "answer": "I focus on product quality" },
+      { "question": "q2", "answer": "I automate test cases" }
+    ],
+    "tags": ["Testing", "Automation"],
+    "submission_date": "2024-08-02T15:30:00Z",
+    "score": 92,
+    "status": false
+  },
+  {
+    "name": "Neha Gupta",
+    "email": "neha.gupta@example.com",
+    "role": "HR",
+    "assessment_submitted": false,
+    "assessment_answers": [],
+    "tags": ["Recruitment", "People Skills"],
+    "submission_date": null,
+    "score": 0,
+    "status": false
+  },
+  {
+    "name": "Ankit Mehta",
+    "email": "ankit.mehta@example.com",
+    "role": "Manager",
+    "assessment_submitted": true,
+    "assessment_answers": [
+      { "question": "q1", "answer": "I enjoy leading teams" },
+      { "question": "q2", "answer": "I ensure timely delivery" }
+    ],
+    "tags": ["Leadership", "Communication"],
+    "submission_date": "2024-06-25T09:45:00Z",
+    "score": 78,
+    "status": true
+  },
+  {
+    "name": "Suman Joshi",
+    "email": "suman.joshi@example.com",
+    "role": "Developer",
+    "assessment_submitted": false,
+    "assessment_answers": [],
+    "tags": ["MongoDB", "Node.js"],
+    "submission_date": null,
+    "score": 0,
+    "status": false
+  },
+  {
+    "name": "Vikas Singh",
+    "email": "vikas.singh@example.com",
+    "role": "QA",
+    "assessment_submitted": true,
+    "assessment_answers": [
+      { "question": "q1", "answer": "I write automated test scripts" },
+      { "question": "q2", "answer": "I collaborate with developers" }
+    ],
+    "tags": ["Automation", "Team Player"],
+    "submission_date": "2024-07-28T14:20:00Z",
+    "score": 88,
+    "status": true
+  },
+  {
+    "name": "Shreya Kapoor",
+    "email": "shreya.kapoor@example.com",
+    "role": "Designer",
+    "assessment_submitted": false,
+    "assessment_answers": [],
+    "tags": ["UI/UX", "Creativity"],
+    "submission_date": null,
+    "score": 0,
+    "status": false
+  },
+  {
+    "name": "Manoj Patil",
+    "email": "manoj.patil@example.com",
+    "role": "Manager",
+    "assessment_submitted": true,
+    "assessment_answers": [
+      { "question": "q1", "answer": "I manage cross-functional teams" },
+      { "question": "q2", "answer": "I ensure client satisfaction" }
+    ],
+    "tags": ["Leadership", "Strategy"],
+    "submission_date": "2024-05-18T11:00:00Z",
+    "score": 80,
+    "status": true
+  },
+  {
+    "name": "Deepa Nair",
+    "email": "deepa.nair@example.com",
+    "role": "HR",
+    "assessment_submitted": false,
+    "assessment_answers": [],
+    "tags": ["Recruitment", "Training"],
+    "submission_date": null,
+    "score": 0,
+    "status": false
+  }
+]

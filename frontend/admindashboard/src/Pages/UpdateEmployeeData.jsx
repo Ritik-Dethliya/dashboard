@@ -13,7 +13,7 @@ function UpdateEmployee() {
         e.preventDefault()
         if(valueUpdateField.trim()==""||updateField=="")return
         try {
-            let res=await axios.patch("http://localhost:8000/employee/update/employee",{updateField,valueUpdateField,id})
+            let res=await axios.patch("https://admindashboard-1hro.onrender.com/employee/update/employee",{updateField,valueUpdateField,id})
             console.log(res.data)
         } catch (error) {
             console.log(error)

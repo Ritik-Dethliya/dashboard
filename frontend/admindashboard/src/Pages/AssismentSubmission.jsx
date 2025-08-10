@@ -17,7 +17,7 @@ function AssismentSubmission() {
     },[])
     const getEmployee=async()=>{
         try {
-            let res=await axios.get(`http://localhost:8000/employee/getemployee/${id}`)
+            let res=await axios.get(`https://admindashboard-1hro.onrender.com/employee/getemployee/${id}`)
             console.log(res.data)
             setEmployee(res.data.employee)
             const assessment_answers=res.data.employee.assessment_answers
@@ -38,7 +38,7 @@ function AssismentSubmission() {
     const handleSubmit=async(e)=>{
         try {
             e.preventDefault()
-            let res=await axios.post(`http://localhost:8000/employee/submit/assiment/${id}`,formData.assessment_answers)
+            let res=await axios.post(`https://admindashboard-1hro.onrender.com/employee/submit/assiment/${id}`,formData.assessment_answers)
             if(res.status==201){
                 alert("Assiment Save Successfully!")
             }

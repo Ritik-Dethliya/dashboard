@@ -9,14 +9,14 @@ import Navbar from "../Components/Navbar"
 function AssignmentDetails() {
     const [employee,setEmployee]=useState(null)
     const {id}=useParams()
-    const assignmentSubmissionLink=`http://localhost:5173/submit/assisment/${id}`
+    const assignmentSubmissionLink=`https://admindashboard-1hro.onrender.com/submit/assisment/${id}`
     const navigate=useNavigate()
     useEffect(()=>{
         getEmployee()
     },[])
     const getEmployee=async()=>{
         try {
-            let res=await axios.get(`http://localhost:8000/employee/getemployee/${id}`)
+            let res=await axios.get(`https://admindashboard-1hro.onrender.com/employee/getemployee/${id}`)
             console.log(res.data)
             setEmployee(res.data.employee)
         } catch (error) {

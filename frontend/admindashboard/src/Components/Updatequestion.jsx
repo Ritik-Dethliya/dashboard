@@ -36,7 +36,7 @@ function UpdateQuestion() {
             if(formData.questionNumber=="")return console.log("Question Not Selected")
             let question=formData.questionNumber
             let option={id,update:"questions",questionNumber:formData.questionNumber,answer:formData.newResponce}
-            let res=await axios.patch("http://localhost:8000/employee/update/employee/question",
+            let res=await axios.patch("https://admindashboard-1hro.onrender.com/employee/update/employee/question",
                 option
             )
             console.log(res.data)

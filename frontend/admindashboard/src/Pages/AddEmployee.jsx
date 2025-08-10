@@ -20,7 +20,7 @@ function AddEmployee() {
     const handleSubmit=async(e)=>{
         e.preventDefault()
         try {
-            let res=await axios.post("http://localhost:8000/employee/addemployee",formData)
+            let res=await axios.post("https://admindashboard-1hro.onrender.com/employee/addemployee",formData)
             // console.log(res.data)
             if(res.data){
                 alert("employee Added")

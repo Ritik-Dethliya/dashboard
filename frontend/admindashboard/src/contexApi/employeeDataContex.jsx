@@ -14,7 +14,7 @@ const EmployeeContexProvider=({children})=>{
 
     const getEmployees=async()=>{
         try {
-            let responce=await axios.get("http://localhost:8000/employee/getemployee")
+            let responce=await axios.get("https://admindashboard-1hro.onrender.com/employee/getemployee")
             console.log(responce.data)
             setEmployees(responce.data.employees)
             setShowAbleData(responce.data.employees)

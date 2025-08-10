@@ -9,7 +9,7 @@ import Navbar from "../Components/Navbar"
 function AssignmentDetails() {
     const [employee,setEmployee]=useState(null)
     const {id}=useParams()
-    const assignmentSubmissionLink=`https://admindashboard-1hro.onrender.com/submit/assisment/${id}`
+    const assignmentSubmissionLink=`https://admin-dashboard-d8005d.netlify.app/submit/assisment/${id}`
     const navigate=useNavigate()
     useEffect(()=>{
         getEmployee()

@@ -4,7 +4,6 @@
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
   padding: 20px;
-  margin-left: 220px;
   background-color: #f4f6f8; 
   overflow: scroll;
 }
@@ -81,9 +80,16 @@
     justify-content: space-around;
 }
 
-@media (max-width: 768px){
+@media (min-width: 768px){
  .emp-container{
-  margin-left: auto;
+  margin-left: 220px;
+  margin-top: 10px;
+ } 
+}
+
+@media (min-width: 1024px){
+ .emp-container{
+  margin-left: 220px;
   margin-top: 10px;
  } 
 }

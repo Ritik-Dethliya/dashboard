@@ -1,0 +1,81 @@
+.assignment-details {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.assignment-details h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+}
+.update-btn{
+    color: white;
+    border-radius:0.6rem ;
+    margin: 10px;
+    padding: 10px;
+    border-width: 0;
+    background: linear-gradient(90deg,rgba(23, 23, 171, 0.474),rgba(45, 45, 204, 0.474));
+    
+}
+.emp-detail {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.emp-detail h4 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.emp-detail .role {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.assignment-details span {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #007bff;
+}
+
+.assignment-details span:hover {
+    text-decoration: underline;
+}
+
+.questions {
+    margin-top: 20px;
+}
+
+.question-answer {
+    background-color: #f1f3f5;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.question-answer h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.question-answer p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.emp-heading {
+    text-align:center;
+}

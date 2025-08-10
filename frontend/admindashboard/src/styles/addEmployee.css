@@ -1,0 +1,79 @@
+.add-employee-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.add-employee-container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.add-employee-container input {
+  flex: 1 1 calc(50% - 15px);
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-employee-container input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
+}
+
+.add-employee-container button {
+  flex: 1 1 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: #4a90e2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-employee-container button:hover {
+  background: #357abd;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .add-employee-container {
+    padding: 15px;
+  }
+
+  .add-employee-container input {
+    flex: 1 1 100%;
+  }
+
+  .add-employee-container button {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
+  .add-employee-container {
+    padding: 12px;
+  }
+
+  .add-employee-container input {
+    font-size: 0.9rem;
+    padding: 10px 12px;
+  }
+
+  .add-employee-container button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

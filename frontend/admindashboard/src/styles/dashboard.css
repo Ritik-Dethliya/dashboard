@@ -1,0 +1,89 @@
+
+.emp-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-left: 220px;
+  background-color: #f4f6f8; 
+  overflow: scroll;
+}
+
+.employee-card {
+  background-color: #ffffff; 
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+}
+.sort-search{
+  position: sticky;
+  top: 50px;
+}
+.employee-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.employee-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a202c; 
+  margin-bottom: 4px;
+}
+.btncontainer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.addempbtn{
+  padding: 10px;
+  border-width: 0;
+  color: white;
+  font-size: 20px;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg,rgba(0, 0, 255, 0.627),rgba(9, 9, 155, 0.627));
+}
+.employee-role {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a5568; 
+}
+
+.employee-assignment-status {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color:blue;
+}
+
+
+.employee-assignment-status::before {
+  content: "● ";
+}
+
+.employee-assignment-status:contains("Submitted") {
+  background-color: #38a169; 
+}
+
+.employee-assignment-status:contains("Not Submited") {
+  background-color: #e53e3e; 
+}
+.sort-search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px){
+ .emp-container{
+  margin-left: auto;
+  margin-top: 10px;
+ } 
+}

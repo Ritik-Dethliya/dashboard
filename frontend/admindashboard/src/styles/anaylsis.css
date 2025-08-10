@@ -1,0 +1,60 @@
+.ana-conatiner {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+
+.assignment-submission,
+.avgScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 45%; 
+    min-width: 300px; 
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    
+}
+
+
+.assignment-submission p,
+.avgScore p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .ana-conatiner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .assignment-submission,
+    .avgScore {
+        flex: 1 1 100%;
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .assignment-submission p,
+    .avgScore p {
+        font-size: 1rem;
+    }
+
+    .assignment-submission,
+    .avgScore {
+        padding: 15px;
+    }
+}

@@ -9,7 +9,7 @@ export default function PieStatus() {
     useEffect(()=>{
         if(!employees)return
         let result=employees.reduce((acc,val)=>{
-            if(val.status){
+            if(val.assessment_submitted){
                 acc["submited"]++
             }
             else{

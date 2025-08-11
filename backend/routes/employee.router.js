@@ -84,4 +84,18 @@ employeeRouter.post("/submit/assiment/:id",async(req,res)=>{
         res.status(500).send({"msg":"error in submission"})
     }
 })
+employeeRouter.delete('/delete/:id',async(req,res)=>{
+    try {
+        const {id}=req.params
+        const deletedUser=await employeeModel.findByIdAndDelete(id)
+        if(!deletedUser)return res.status(404).send({"msg":"User not Found"})
+
+        res.status(200).send({"msg":"User Deleted",deletedUser})
+
+    } catch (error) {
+        res.status(500).send({"msg":"Somthing went wrong "})
+    }
+    
+
+})
 export default employeeRouter

@@ -7,12 +7,13 @@ import AddEmployee from './Pages/AddEmployee'
 import AssismentSubmission from './Pages/AssismentSubmission'
 import UpdateEmployee from './Pages/UpdateEmployeeData'
 import Anaylsis from './Pages/Anaylsis'
+import DashboardSkeleton from './Components/Skeleton'
 
 function App() {
 
   return (
     <>
-    
+
     <Routes>
       <Route path='/' element={<Dashboard/>}/>
       <Route path='/anaylsis' element={<Anaylsis/>}/>

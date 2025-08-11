@@ -1,0 +1,158 @@
+.skeleton-container {
+    position: relative;
+    left: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 10px;
+    background-color: rgb(247, 251, 251);
+    
+}
+.skeleton-container-assign
+.skeleton-details
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 10px;
+    
+    justify-content: center;
+    background-color: rgb(247, 251, 251);
+}
+.skeleton-emp-card {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: linear-gradient(
+    90deg,
+    rgba(220, 220, 220, 0.2) 25%,
+    rgba(220, 220, 220, 0.4) 50%,
+    rgba(220, 220, 220, 0.2) 75%
+    );
+    animation: shimer 1.5s ease infinite;
+    background-size: 200% 100%;
+}
+.sketeton-name {
+    width: 90%;
+    height: 50px;
+    background-size: 200% 100%;
+    background: linear-gradient(
+        90deg,
+    rgba(159, 158, 158, 0.2) 25%,
+    rgba(234, 234, 234, 0.4) 50%,
+    rgba(195, 194, 194, 0.2) 75%
+        );
+    animation: shimer 0.5s ease infinite;
+}
+
+.sketeton-role{
+    width: 60%;
+    height: 30px;
+    background-size: 200% 100%;
+    background: linear-gradient(
+        90deg,
+    rgba(159, 158, 158, 0.2) 25%,
+    rgba(234, 234, 234, 0.4) 50%,
+    rgba(128, 127, 127, 0.2) 75%
+        );
+    animation: shimer 1s ease infinite;
+}
+.sketeton-status{
+    width: 70%;
+    height: 20px;
+    background-size: 200% 100%;
+    background: linear-gradient(
+        90deg,
+    rgba(159, 158, 158, 0.2) 25%,
+    rgba(234, 234, 234, 0.4) 50%,
+    rgba(128, 127, 127, 0.2) 75%
+        );
+    animation: shimer 1s ease infinite;
+}
+
+
+.skeleton-heading
+.skbtn{
+    width: 40%;
+    height: 40px;
+    background-size: 200% 100%;
+    background: linear-gradient(
+        90deg,
+    rgba(159, 158, 158, 0.2) 25%,
+    rgba(234, 234, 234, 0.4) 50%,
+    rgba(128, 127, 127, 0.2) 75%
+        );
+    animation: shimer 1s ease infinite;
+}
+.skbtn{
+    width: 50px;
+    height: 40px;
+    border: none;
+    margin: 5px;
+}
+
+.skeleton-btn{
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.assgment-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.sk-question {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.sk-q,
+.sk-a {
+  
+  background: linear-gradient(
+    90deg,
+    rgba(220, 220, 220, 0.2) 25%,
+    rgba(220, 220, 220, 0.4) 50%,
+    rgba(220, 220, 220, 0.2) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  box-sizing: border-box; 
+}
+
+.sk-a {
+  width: 70%;
+  height: 40px; 
+}
+
+
+.sk-q {
+ height: 20px; 
+  width: 100%;
+}
+.skeleton-container-assign{
+    width: 100%;
+    justify-items: center;
+}
+
+@media screen and (max-width:480px) {
+    .skeleton-container{
+        left: 0;
+    }
+}
+@keyframes shimer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}

@@ -8,6 +8,7 @@ nav {
     flex-wrap: wrap;
     position: sticky;
     top: 5px;
+    z-index: 1000;
 }
 
 .logo {

@@ -17,10 +17,7 @@
   cursor: pointer;
   border: 1px solid #e0e0e0;
 }
-.sort-search{
-  position: sticky;
-  top: 50px;
-}
+
 .employee-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.12);

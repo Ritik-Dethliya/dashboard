@@ -5,9 +5,11 @@ import axios from "axios"
 import '../styles/assignment.css'
 import { predefinedQuestions } from "../dataArray/data"
 import Navbar from "../Components/Navbar"
+import { AssignmentSkeleton } from "../Components/Skeleton"
 
 function AssignmentDetails() {
     const [employee,setEmployee]=useState(null)
+    const {loading,setLoading}=useContext(employeeContex)
     const {id}=useParams()
     const assignmentSubmissionLink=`https://admin-dashboard-d8005d.netlify.app/submit/assisment/${id}`
     const navigate=useNavigate()
@@ -16,11 +18,14 @@ function AssignmentDetails() {
     },[])
     const getEmployee=async()=>{
         try {
+            setLoading(true)
             let res=await axios.get(`https://admindashboard-1hro.onrender.com/employee/getemployee/${id}`)
             console.log(res.data)
             setEmployee(res.data.employee)
+            setLoading(false)
         } catch (error) {
             console.log(error)
+            setLoading(false)
         }
     }
     const copyToClipboard = () => {
@@ -50,6 +55,8 @@ function AssignmentDetails() {
     return (  
         <>
             <Navbar/>
+            {}
+           {loading && <AssignmentSkeleton/>}
         {employee &&
         <>
              <h1 className="emp-heading">{employee.name}`s Details</h1>

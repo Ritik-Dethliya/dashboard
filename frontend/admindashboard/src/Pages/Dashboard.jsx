@@ -7,8 +7,9 @@ import { useNavigate } from "react-router-dom";
 import { employeeContex } from "../contexApi/employeeDataContex";
 import '../styles/dashboard.css'
 import PieStatus from "../Components/PieChart";
+import DashboardSkeleton from "../Components/Skeleton";
 function Dashboard() {
-    let {showAbleData,employees,setShowAbleData}=useContext(employeeContex)
+    let {showAbleData,employees,setShowAbleData,loading,setLoading}=useContext(employeeContex)
 
     const [filterEmployee,setFilterEmp]=useState(showAbleData)
     const [searchTerm,setSearchTerm]=useState("")
@@ -70,6 +71,7 @@ function Dashboard() {
             </div>
                 <div className="dashboard-container">
                     <Filtering setFilterObject={setFilterObject} filterObject={filterObject} />
+                    {loading && <DashboardSkeleton/>}
                 <div className="emp-container">
                     
                     {

@@ -32,6 +32,21 @@ function AssignmentDetails() {
             console.error("Failed to copy: ", err);
         });
     };
+    const deleteEmployee=async()=>{
+        try {
+            let res=await axios.delete(`https://admindashboard-1hro.onrender.com/employee/delete/${id}`)
+            if(res.data){
+                alert("Employee Deleted")
+                navigate("/")
+            }
+            else{
+                alert("Employee not Present or Deleted")
+            }
+        } catch (error) {
+            console.log(error)
+            alert("Faild to delete Try again!")
+        }
+    }
     return (  
         <>
             <Navbar/>
@@ -53,6 +68,10 @@ function AssignmentDetails() {
                 <button className="update-btn"
                     onClick={copyToClipboard}
                 >Copy Assignment Submission link</button>
+
+                <button className="update-btn"
+                    onClick={deleteEmployee}
+                >Delete Employee</button>
 
                 <h3>Assessement Question Answers</h3>
                 <div className="questions">

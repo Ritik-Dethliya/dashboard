@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import '../styles/updateemployee.css'
+import Aside from "../Components/Aside";
 
 function UpdateEmployee() {
     const {id}=useParams()
@@ -22,6 +23,7 @@ function UpdateEmployee() {
     return (  
         <>
             <Navbar/>
+            <Aside/>
             <div className="update-container">
                 <h1>Update employee Detail</h1>
                 <form onSubmit={handelSubmit}>

@@ -1,9 +1,10 @@
 .skeleton-container {
     position: relative;
     left: 230px;
+    width: calc(100% - 220px);
     display: flex;
     flex-wrap: wrap;
-    padding: 5px;
+    
     gap: 10px;
     background-color: rgb(247, 251, 251);
     
@@ -147,9 +148,10 @@
     justify-items: center;
 }
 
-@media screen and (max-width:480px) {
+@media screen and (width<780px) {
     .skeleton-container{
         left: 0;
+        width: 100%;
     }
 }
 @keyframes shimer {

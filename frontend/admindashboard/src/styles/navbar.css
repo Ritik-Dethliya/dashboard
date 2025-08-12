@@ -2,24 +2,41 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #2c3e50;
+    background: linear-gradient(to right, #584395, #8e85b7,#511bcf);
     padding: 10px 20px;
     color: white;
     flex-wrap: wrap;
     position: sticky;
     top: 5px;
     z-index: 1000;
+    
 }
-
+.nav{
+    margin-left: 60px;
+}
+.nav.collapsed{
+    margin-left: 300px;
+}
 .logo {
+    display: flex;
+    gap: 10px;
     font-size: 1.5rem;
     font-weight: bold;
 }
-
+.humberf{
+    
+}
+.humberf-icon{
+    border: none;
+    border-radius: 2px;
+    background: none;
+}
 .links {
     display: flex;
     gap: 20px;
     list-style: none;
+    font-size: 20px;
+
 }
 
 .link {
@@ -34,10 +51,24 @@ nav {
 }
 
 /* Responsive for mobile */
+@media screen and (width>1040px) {
+    nav{
+        
+        padding: 20px;
+    }
+}
+
+@media screen and (width>780px) {
+    nav{
+        padding: 20px;
+        height: 50px;
+    }
+}
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
         align-items: flex-start;
+        padding: 20px;
     }
 
     .links {
@@ -60,4 +91,13 @@ nav {
 }
 .active{
     color:red
+}
+@media screen and (width<480px){
+    .nav{
+        margin-left: 0px;
+        width: 100%;
+    }
+    .nav.collapsed{
+        margin-left: 0px;
+    }
 }

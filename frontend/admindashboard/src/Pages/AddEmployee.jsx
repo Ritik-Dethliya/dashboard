@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import Navbar from "../Components/Navbar";
 import '../styles/addemployee.css'
+import Aside from "../Components/Aside";
 
 const intialState={
     name:"",
@@ -33,6 +34,7 @@ function AddEmployee() {
     return (  
         <>
             <Navbar/>
+            <Aside/>
             <div className="add-employee-container">
                 <form onSubmit={handleSubmit}>
                     <input 

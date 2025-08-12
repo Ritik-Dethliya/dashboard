@@ -9,6 +9,7 @@ const EmployeeContexProvider=({children})=>{
     const [employees,setEmployees]=useState(null)
     const [showAbleData,setShowAbleData]=useState(null)
     const [loading,setLoading]=useState(false)
+    const [colapsed,setColapsed]=useState(true)
     useEffect(()=>{
         getEmployees()
     },[])
@@ -27,7 +28,14 @@ const EmployeeContexProvider=({children})=>{
         }
     }
     return(
-        <employeeContex.Provider value={{employees,showAbleData,setShowAbleData,setEmployees,loading,setLoading}}>
+        <employeeContex.Provider value={{
+            employees,showAbleData,
+            setShowAbleData,
+            setEmployees,
+            loading,
+            setLoading,
+            colapsed,setColapsed
+            }}>
             {children}
         </employeeContex.Provider>
     )

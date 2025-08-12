@@ -72,9 +72,9 @@ function Filtering({setFilterObject,filterObject}) {
                         Assessment Submission
                     </h3>
                     <select
-                        onChange={(e)=>{setFilterObject({...filterObject,"status":Number(e.target.value)})}}
+                        onChange={(e)=>{setFilterObject({...filterObject,"assessment_submitted":Number(e.target.value)})}}
                     >
-                        <option value=""></option>
+                        <option value="">All</option>
                         <option value={1}>Submitted</option>
                         <option value={0}>Not Submitted</option>
                     </select>
@@ -83,7 +83,7 @@ function Filtering({setFilterObject,filterObject}) {
                         Role
                     </h3>
                     <select onChange={(e)=>{setFilterObject({...filterObject,"role":e.target.value})}}>
-                        <option value=""></option>
+                        <option value="">All</option>
                         {role.map((rol,indx)=><option value={rol} key={indx}>{rol}</option>)}
                     </select>
 
@@ -93,7 +93,7 @@ function Filtering({setFilterObject,filterObject}) {
                     <select
                         onChange={(e)=>{setFilterObject({...filterObject,"InterestArea":e.target.value})}}
                     >
-                        <option value=""></option>
+                        <option value="">All</option>
                         {InterestArea.map((intrest,index)=><option value={intrest} key={index}>{intrest}</option>)}
                     </select>
 
@@ -104,7 +104,7 @@ function Filtering({setFilterObject,filterObject}) {
                         
                         onChange={(e)=>{setFilterObject({...filterObject,"LongTermGoal":e.target.value})}}
                     >
-                        <option value=""></option>
+                        <option value="">All</option>
                         {longTerm.map((goal,index)=><option value={goal} key={index}>{goal}</option>)}
                     </select>
 

@@ -8,12 +8,14 @@ import AssismentSubmission from './Pages/AssismentSubmission'
 import UpdateEmployee from './Pages/UpdateEmployeeData'
 import Anaylsis from './Pages/Anaylsis'
 import DashboardSkeleton from './Components/Skeleton'
+import Aside from './Components/Aside'
+import Navbar from './Components/Navbar'
 
 function App() {
 
   return (
     <>
-
+    
     <Routes>
       <Route path='/' element={<Dashboard/>}/>
       <Route path='/anaylsis' element={<Anaylsis/>}/>

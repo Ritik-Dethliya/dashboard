@@ -6,6 +6,7 @@ import '../styles/assignment.css'
 import { predefinedQuestions } from "../dataArray/data"
 import Navbar from "../Components/Navbar"
 import { AssignmentSkeleton } from "../Components/Skeleton"
+import Aside from "../Components/Aside"
 
 function AssignmentDetails() {
     const [employee,setEmployee]=useState(null)
@@ -55,6 +56,7 @@ function AssignmentDetails() {
     return (  
         <>
             <Navbar/>
+            <Aside/>
             {}
            {loading && <AssignmentSkeleton/>}
         {employee &&

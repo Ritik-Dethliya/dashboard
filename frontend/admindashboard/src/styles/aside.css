@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hide{
+    width:40px;
+    padding: 0px;
+}
+aside{
+    
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    align-items: flex-start;
+    flex-direction: column;
+    left: 0;
+    top:5px;
+    z-index: 1000;
+    height: 100vh;
+    padding: 10px;
+    gap:5px;
+    background: linear-gradient(to bottom, #584395, #8e85b7,#dddedd);
+    padding: 2%;
+    box-sizing: border-box;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.aside{
+    width: 0;
+    padding: 40px;
+}
+.aside.collapsed{
+    width:300px;
+}
+.admin-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+.admin-image{
+    width: 50px;
+    height: 50px;
+    
+
+}
+.admin-image > img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.admin-details{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-direction: column;
+
+}
+.admin-link{
+    width: 100%;
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
+    transition: border 0.1s ease-in;
+    padding-left: 2px;
+}
+.admin-link:hover{
+    border-bottom: 4px solid cyan;
+    
+}
+.links-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+@media screen and (width<480px) {
+    aside{
+        display: none;
+        width: 0;
+    }
+}

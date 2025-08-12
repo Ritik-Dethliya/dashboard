@@ -8,8 +8,9 @@ import { employeeContex } from "../contexApi/employeeDataContex";
 import '../styles/dashboard.css'
 import PieStatus from "../Components/PieChart";
 import DashboardSkeleton from "../Components/Skeleton";
+import Aside from "../Components/Aside";
 function Dashboard() {
-    let {showAbleData,employees,setShowAbleData,loading,setLoading}=useContext(employeeContex)
+    let {showAbleData,employees,setShowAbleData,loading,setLoading,colapsed}=useContext(employeeContex)
 
     const [filterEmployee,setFilterEmp]=useState(showAbleData)
     const [searchTerm,setSearchTerm]=useState("")
@@ -64,13 +65,16 @@ function Dashboard() {
     return (  
         <>
             <Navbar/>
-            
-            <div className="sort-search">
-                <Searching setSearchTerm={setSearchTerm}/>
-                <Sorting setSortOption={setSortOption} filterEmployee={filterEmployee}/> 
-            </div>
-                <div className="dashboard-container">
-                    <Filtering setFilterObject={setFilterObject} filterObject={filterObject} />
+            <Aside/>
+                <div className={colapsed?"dashboard-container colapsed":"dashboard-container"}>
+                    <div className="sort-search">
+                        <Searching setSearchTerm={setSearchTerm}/>
+                        <Sorting setSortOption={setSortOption} filterEmployee={filterEmployee}/> 
+                    </div>
+                    <div className="filter-compo-container">
+                        <Filtering setFilterObject={setFilterObject} filterObject={filterObject} />
+                    </div>
+                    
                     {loading && <DashboardSkeleton/>}
                 <div className="emp-container">
                     
@@ -86,7 +90,11 @@ function Dashboard() {
                                     <h4 className="employee-name">{employee.name}</h4>
                                     <span className="employee-role">{employee.role}</span>
                                     <br />
-                                    <span className="employee-assignment-status">{employee.assessment_submitted?"Submitted":"Not Submited"}</span>
+                                    <button className="employee-assignment-status">{
+                                        employee.assessment_submitted?
+                                        "Assignment Submited":
+                                        "Assignment Not Submited"
+                                    }</button>
                                     
                                 </div>
                             )

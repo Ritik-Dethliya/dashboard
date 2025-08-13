@@ -12,12 +12,12 @@
   margin-bottom: 20px;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #1e293b; /* slate-800 */
-  border-bottom: 2px solid #f1f5f9; /* subtle divider */
+  color: #1e293b; 
+  border-bottom: 2px solid #f1f5f9; 
   padding-bottom: 10px;
 }
 
-/* Form Layout */
+
 .add-employee-container form {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -33,16 +33,16 @@
   margin-bottom: 6px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #475569; /* slate-600 */
+  color: #475569; 
 }
 
 .add-employee-container input {
   padding: 12px 14px;
   font-size: 1rem;
-  border: 1px solid #e2e8f0; /* gray-200 */
+  border: 1px solid #e2e8f0; 
   border-radius: 10px;
   outline: none;
-  background-color: #f8fafc; /* gray-50 */
+  background-color: #f8fafc; 
   transition: all 0.2s ease;
 }
 
@@ -52,7 +52,7 @@
   background-color: #fff;
 }
 
-/* Full-width items like buttons */
+
 .full-width {
   grid-column: 1 / -1;
 }
@@ -78,7 +78,7 @@
   transform: translateY(0);
 }
 
-/* Mobile & Tablet Adjustments */
+
 @media (max-width: 768px) {
   .add-employee-container {
     padding: 16px;

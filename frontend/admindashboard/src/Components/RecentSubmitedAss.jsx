@@ -13,7 +13,13 @@ function RecentAssignment() {
             .sort((a,b)=> new Date(b.submission_date)-new Date(a.submission_date) )
             .filter((emp)=>emp.submission_date!=null)
         console.log(employeeCopy)
-        setResultArray(employeeCopy)
+        if(employeeCopy.length>=5){
+            setResultArray(employeeCopy.splice(0,5))
+        }
+        else{
+            setResultArray(employeeCopy)
+        }
+        
     },[employees])
     return (  
         <>

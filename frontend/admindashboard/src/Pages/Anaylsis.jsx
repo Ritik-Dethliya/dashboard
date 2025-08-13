@@ -5,7 +5,7 @@ import '../styles/anaylsis.css'
 function Anaylsis() {
     return (  
         <>
-            <Navbar/>
+            
             <div className="ana-conatiner">
                 <div className="assignment-submission">
                     <p>Assignment Submission</p>

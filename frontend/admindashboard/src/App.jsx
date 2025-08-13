@@ -10,6 +10,7 @@ import Anaylsis from './Pages/Anaylsis'
 import DashboardSkeleton from './Components/Skeleton'
 import Aside from './Components/Aside'
 import Navbar from './Components/Navbar'
+import Employees from './Pages/Employee'
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
     
     <Routes>
       <Route path='/' element={<Dashboard/>}/>
-      <Route path='/anaylsis' element={<Anaylsis/>}/>
+      
+      <Route path='/employees' element={<Employees/>}/>
       <Route path='/addemployee' element={<AddEmployee/>}/>
       <Route path='/submit/assisment/:id' element={<AssismentSubmission/>}/>
       <Route path="/assignment/:id" element={<AssignmentDetails/>}/>

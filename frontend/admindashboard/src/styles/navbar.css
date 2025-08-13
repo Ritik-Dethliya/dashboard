@@ -96,6 +96,7 @@ nav {
     .nav{
         margin-left: 0px;
         width: 100%;
+        padding: 40px;
     }
     .nav.collapsed{
         margin-left: 0px;

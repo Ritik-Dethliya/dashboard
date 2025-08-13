@@ -16,12 +16,12 @@ function Navbar() {
                             onClick={toggleAside}
                         >&#9776;</button>
                     </div>
-                    Pluto
+                    Driftal
                 </div>
                 <div className="links">
                     <NavLink to='/' className="link">Dashboard</NavLink>
-                    <NavLink to='/anaylsis' className="link">Anaylsis</NavLink>
-                    
+                    <NavLink to="/employees" className="link">Employees</NavLink>
+                    <NavLink to="/addemployee" className="link">Add Employee</NavLink>   
                 </div>
             </nav>
         </>

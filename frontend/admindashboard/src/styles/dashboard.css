@@ -35,6 +35,7 @@
   font-weight: 600;
   color: #1a202c; 
   margin-bottom: 4px;
+  text-align: left;
 }
 .btncontainer{
   display: flex;
@@ -55,7 +56,23 @@
   font-weight: 500;
   color: #4a5568; 
 }
+.emp-image{
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:4px;
+}
 
+.emp-image> img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .employee-assignment-status {
   display: inline-block;
   margin-top: 10px;
@@ -95,6 +112,7 @@
 
 @media screen and (width<480px){
   .dashboard-container{
+    padding-left: 20px;
     margin-left: 0;
   }
   .dashboard-container.colapsed{

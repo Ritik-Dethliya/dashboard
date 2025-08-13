@@ -9,6 +9,8 @@ import '../styles/dashboard.css'
 import PieStatus from "../Components/PieChart";
 import DashboardSkeleton from "../Components/Skeleton";
 import Aside from "../Components/Aside";
+import Overview from "../Components/Overview";
+import Anaylsis from "./Anaylsis";
 function Dashboard() {
     let {showAbleData,employees,setShowAbleData,loading,setLoading,colapsed}=useContext(employeeContex)
 
@@ -66,50 +68,11 @@ function Dashboard() {
         <>
             <Navbar/>
             <Aside/>
+          
                 <div className={colapsed?"dashboard-container colapsed":"dashboard-container"}>
-                    <div className="sort-search">
-                        <Searching setSearchTerm={setSearchTerm}/>
-                        <Sorting setSortOption={setSortOption} filterEmployee={filterEmployee}/> 
-                    </div>
-                    <div className="filter-compo-container">
-                        <Filtering setFilterObject={setFilterObject} filterObject={filterObject} />
-                    </div>
-                    
-                    {loading && <DashboardSkeleton/>}
-                <div className="emp-container">
-                    
-                    {
-                        showAbleData &&
-                        showAbleData.map((employee,ind)=>{
-                            return(
-                                <div 
-                                    className="employee-card" 
-                                    key={employee._id}
-                                    onClick={()=>navigate(`/assignment/${employee._id}`)}
-                                >
-                                    <h4 className="employee-name">{employee.name}</h4>
-                                    <span className="employee-role">{employee.role}</span>
-                                    <br />
-                                    <button className="employee-assignment-status">{
-                                        employee.assessment_submitted?
-                                        "Assignment Submited":
-                                        "Assignment Not Submited"
-                                    }</button>
-                                    
-                                </div>
-                            )
-                        })
-                    }
+                    <Overview/>
+                    <Anaylsis/>
                 </div>
-                <div className="btncontainer">
-                    <button 
-                        onClick={()=>navigate("/addemployee")}
-                        className="addempbtn"
-                    >Add Employee
-                    </button>
-                </div>
-            
-            </div>
             
         </>
     );

@@ -1,0 +1,35 @@
+.overview-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.total,
+.total-assignment-submitted,
+.total-pending-ass{
+    border-radius: 0.4rem;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.heading-overview{
+    font-size: 20px;
+}
+.total-pending-ass{
+    color:red
+}
+
+.total-assignment-submitted{
+    color: green;
+}
+.total{
+    color:brown
+
+}
+
+@media screen and(max-width:480px) {
+    .overview-container{
+        
+    }
+}

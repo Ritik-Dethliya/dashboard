@@ -17,9 +17,8 @@ function Aside() {
                     </div>
                 </div>
                 <div className="links-container">
-                    <NavLink to="/" className="admin-link">Employee</NavLink>
-                    <NavLink to="/assignment" className="admin-link">Assignment</NavLink>
-                    <NavLink to="/analysis" className="admin-link">Anaylsis</NavLink>
+                    <NavLink to="/employees" className="admin-link">Employees</NavLink>
+                    <NavLink to="/addemployee" className="admin-link">Add Employee</NavLink>
                 </div>
                 
             </aside>

@@ -1,8 +1,9 @@
 import axios from "axios";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Navbar from "../Components/Navbar";
 import '../styles/addemployee.css'
 import Aside from "../Components/Aside";
+import { employeeContex } from "../contexApi/employeeDataContex";
 
 const intialState={
     name:"",
@@ -13,6 +14,7 @@ const intialState={
     score:0,
 }
 function AddEmployee() {
+    const {colapsed}=useContext(employeeContex)
     const [formData,setFormData]=useState(intialState)
     const handleChange=(e)=>{
         const {name,value}=e.target
@@ -35,6 +37,7 @@ function AddEmployee() {
         <>
             <Navbar/>
             <Aside/>
+            <div className={colapsed?"dashboard-container colapsed":"dashboard-container"}>
             <div className="add-employee-container">
                 <form onSubmit={handleSubmit}>
                     <input 
@@ -86,6 +89,7 @@ function AddEmployee() {
                     />
                     <button>Add</button>
                 </form>
+            </div>
             </div>
         </>
     );

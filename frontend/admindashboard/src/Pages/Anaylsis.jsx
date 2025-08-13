@@ -5,8 +5,9 @@ import '../styles/anaylsis.css'
 function Anaylsis() {
     return (  
         <>
-            
+            <h3 class="section-title">Visual Analysis</h3>
             <div className="ana-conatiner">
+                
                 <div className="assignment-submission">
                     <p>Assignment Submission</p>
                     <PieStatus/>

@@ -11,6 +11,8 @@ import DashboardSkeleton from "../Components/Skeleton";
 import Aside from "../Components/Aside";
 import Overview from "../Components/Overview";
 import Anaylsis from "./Anaylsis";
+import RecentAssignment from "../Components/RecentSubmitedAss";
+import TableOverView from "../Components/TableOverview";
 function Dashboard() {
     let {showAbleData,employees,setShowAbleData,loading,setLoading,colapsed}=useContext(employeeContex)
 
@@ -71,6 +73,8 @@ function Dashboard() {
           
                 <div className={colapsed?"dashboard-container colapsed":"dashboard-container"}>
                     <Overview/>
+                    <RecentAssignment/>
+                    <TableOverView/>
                     <Anaylsis/>
                 </div>
             

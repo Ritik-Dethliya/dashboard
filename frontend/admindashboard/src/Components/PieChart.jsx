@@ -17,7 +17,8 @@ export default function PieStatus() {
             }
             return acc
         },{submited:0,notSubmited:0})
-        console.log(result)
+        
+        // console.log(result)
         const {submited,notSubmited}=result
         setData([{name:"Submited",value:submited},{name:"Not-Submited",value:notSubmited}])
     },[employees])

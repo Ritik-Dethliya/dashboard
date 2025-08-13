@@ -16,7 +16,8 @@ function AverageScore() {
             acc[val.role].count += 1;
             return acc;
         },{})
-        console.log(role)
+        // console.log(role)
+        
         let roleAna=[]
         for(let key in role){
             roleAna.push({name:key,value:role[key].totalScore/role[key].count})
